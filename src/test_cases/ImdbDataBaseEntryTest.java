@@ -36,14 +36,5 @@ public class ImdbDataBaseEntryTest extends BaseClass
 		
 	}
 	
-	/*@Test(alwaysRun=true)
-	public void putDataToDataBase()
-	{
-		Database db=new Database();
-		
-			db.setMovieTable(1,"jhvjhasf", 1994, (float)9.8);
-		
-		
-	}*/
 	
 }
