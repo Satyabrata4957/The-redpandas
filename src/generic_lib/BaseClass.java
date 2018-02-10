@@ -46,25 +46,6 @@ public class BaseClass
 			driver=new FirefoxDriver();
 			log.info("Lunching Firefox");
 		}
-		else if(browser.equalsIgnoreCase("ie"))
-		{
-			System.setProperty("webdriver.ie.driver", "./servers/IEDriverServer.exe");
-			   DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
-		       caps.setCapability("ignoreZoomSetting", true);
-		       caps.setCapability("unexpectedAlertBehaviour", "accept");
-		       caps.setCapability("ignoreProtectedModeSettings", true);
-		       caps.setCapability("disable-popup-blocking", true);
-		       caps.setCapability("enablePersistentHover", true);
-		       caps.setCapability("nativeEvents",false);
-		       driver = new InternetExplorerDriver(caps);
-		       log.info("Lunching ie");
-		}
-		else if(browser.equalsIgnoreCase("opera"))
-	   {
-		   driver=new OperaDriver();
-		   log.info("Lunching opera");
-	   }
-		
 		
 		//maximize the browser
 		driver.manage().window().maximize();
