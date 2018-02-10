@@ -22,6 +22,7 @@ CREATE TABLE `top_250_movie_info` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 4.TestNG should be installed and TestNG library should be added in the eclipse.
 5.Operating system should be windows 64 bit.
+6.Firefox browser version should be below 45.0.
 
 Getting Started:
 1.Import the project from github to eclipse.
