@@ -31,7 +31,7 @@ Getting Started:
 4.Add ImdbDataBaseEntryTest class to the testng.xml file as "<class name="test_cases.ImdbDataBaseEntryTest"/>" to store imdb page data to the database.
 5.Add ImdbDataBaseViewTest class to the testng.xml file as "<class name="test_cases.ImdbDataBaseViewTest"/>" to view imdb page data from the database.
 6.Run the testng.xml as testNG suite present in the project(testng.xml file data shouldn't be modified).
-7.To run the script in firefox, open testng.xml and set 'Browser' parameter value="firefox", for chrome value="chrome", for internet explorer value="ie".
+7.To run the script in firefox, open testng.xml and set 'Browser' parameter value="firefox", for chrome value="chrome".
 8.After it ran refresh the project and go to "ExtentReport" folder and open "redpanda.html" in the browser to see the test report.
 
 
