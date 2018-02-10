@@ -10,6 +10,7 @@ import repository.IMDb_Top_250_Page;
 
 public class ImdbDataBaseEntryTest extends BaseClass
 {
+        Logger log = Logger.getLogger("ImdbDataBaseEntryTest");
 	List<String> movieNameStr;
 	List<String> movieReleaseYrStr;
 	List<String> movieRatingStr;
@@ -32,6 +33,7 @@ public class ImdbDataBaseEntryTest extends BaseClass
 			float rating=Float.parseFloat(movieRatingStr.get(i));
 			System.out.print((i+1)+" ");
 			db.setMovieTable(i+1,name, releaseYr, rating);
+			log.info("Set data into database");
 		}
 		
 	}
