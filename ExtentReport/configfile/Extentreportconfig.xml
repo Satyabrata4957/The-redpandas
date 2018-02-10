@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+  <configuration>
+    <!-- report theme -->
+    <!-- standard, dark -->
+    <theme>standard</theme>
+  
+    <!-- document encoding -->
+    <!-- defaults to UTF-8 -->
+    <encoding>UTF-8</encoding>
+    
+    <!-- protocol for script and stylesheets -->
+    <!-- defaults to https -->
+    <protocol>https</protocol>
+    
+    <!-- title of the document -->
+    <documentTitle>Red panda</documentTitle>
+    
+    <!-- report name - displayed at top-nav -->
+     <reportName><image id="RedpandaLogo">
+		<![CDATA[	
+		<img src='http://mumbaistartupjobs.com/wp-content/uploads/2014/12/376x200-11.png' alt="Red_Panda"/>
+		]]>
+	</image></reportName>
+    
+    <!-- location of charts in the test view --><!-- top, bottom -->
+        <testViewChartLocation>bottom</testViewChartLocation>
+      
+    <!-- report headline - displayed at top-nav, after reportHeadline -->
+    <reportHeadline></reportHeadline>
+    
+    <!-- global date format override -->
+    <!-- defaults to yyyy-MM-dd -->
+    <dateFormat>dd-MM-yyyy</dateFormat>
+    
+    <!-- global time format override -->
+    <!-- defaults to HH:mm:ss -->
+    <timeFormat>HH:mm:ss</timeFormat>
+    
+    <!-- custom javascript -->
+    <scripts>
+      <![CDATA[
+        $(document).ready(function() {
+          
+        });
+      ]]>
+    </scripts>
+    
+    <!-- custom styles -->
+    <styles>
+   <![CDATA[
+       .report-name { padding-left: 10px; } .report-name > img {margin-left: 30px;margin-top: 0px; width:260px;height:54px;}
+       
+        ]]>
+   </styles>
+  </configuration>
+</extentreports>

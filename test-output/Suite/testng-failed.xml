@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="generic_lib.Listner"/>
+  </listeners>
+  <test name="Test(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="imdb_250.ImdbTop_250_Movies">
+        <methods>
+          <include name="Test1"/>
+          <include name="browserClose"/>
+          <include name="configBc"/>
+        </methods>
+      </class> <!-- imdb_250.ImdbTop_250_Movies -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

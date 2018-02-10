@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="95441" started-at="2018-02-08T19:25:01Z" finished-at="2018-02-08T19:26:36Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="95441" started-at="2018-02-08T19:25:01Z" finished-at="2018-02-08T19:26:36Z">
+      <class name="test_cases.ImdbDataBaseEntryTest">
+        <test-method status="PASS" signature="configBc()[pri:0, instance:test_cases.ImdbDataBaseEntryTest@150c158]" name="configBc" is-config="true" duration-ms="52454" started-at="2018-02-09T01:25:01Z" finished-at="2018-02-09T01:25:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method status="PASS" signature="fetchFromImdbPage()[pri:0, instance:test_cases.ImdbDataBaseEntryTest@150c158]" name="fetchFromImdbPage" duration-ms="39378" started-at="2018-02-09T01:25:53Z" finished-at="2018-02-09T01:26:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchFromImdbPage -->
+        <test-method status="PASS" signature="putDataToDataBase()[pri:0, instance:test_cases.ImdbDataBaseEntryTest@150c158]" name="putDataToDataBase" duration-ms="3211" started-at="2018-02-09T01:26:33Z" depends-on-methods="test_cases.ImdbDataBaseEntryTest.fetchFromImdbPage" finished-at="2018-02-09T01:26:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putDataToDataBase -->
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:test_cases.ImdbDataBaseEntryTest@150c158]" name="browserClose" is-config="true" duration-ms="4139" started-at="2018-02-09T01:26:39Z" finished-at="2018-02-09T01:26:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- test_cases.ImdbDataBaseEntryTest -->
+      <class name="test_cases.ImdbDataBaseViewTest">
+        <test-method status="PASS" signature="fetchFromImdbDataBase()[pri:0, instance:test_cases.ImdbDataBaseViewTest@10dba097]" name="fetchFromImdbDataBase" duration-ms="32" started-at="2018-02-09T01:26:36Z" finished-at="2018-02-09T01:26:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchFromImdbDataBase -->
+      </class> <!-- test_cases.ImdbDataBaseViewTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
