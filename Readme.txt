@@ -20,17 +20,17 @@ CREATE TABLE `top_250_movie_info` (
    `MovieRatings` float not null,
    PRIMARY KEY (`SLNo`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-4.TestNG shold be installed and TestNG library should be added in the eclipse.
-
+4.TestNG should be installed and TestNG library should be added in the eclipse.
+5.Operating system should be windows 64 bit.
 
 Getting Started:
 1.Import the project from github to eclipse.
 2.Update the maven project.
-3.Convert the project to testNG.
-4.Go to package "generic_lib" to class "Database" in method "setDataBase" enter the url,username and password of the database.
-5.Add ImdbDataBaseEntryTest class to the testng.xml file as "<class name="test_cases.ImdbDataBaseEntryTest"/>" to store imdb page data to the database.
-6.Add ImdbDataBaseViewTest class to the testng.xml file as "<class name="test_cases.ImdbDataBaseViewTest"/>" to view imdb page data from the database.
-7.Run the testng.xml as testNG suite present in the project.
+3.Go to package "generic_lib" to class "Database" in method "setDataBase" enter the url,username and password of the database.
+4.Add ImdbDataBaseEntryTest class to the testng.xml file as "<class name="test_cases.ImdbDataBaseEntryTest"/>" to store imdb page data to the database.
+5.Add ImdbDataBaseViewTest class to the testng.xml file as "<class name="test_cases.ImdbDataBaseViewTest"/>" to view imdb page data from the database.
+6.Run the testng.xml as testNG suite present in the project(testng.xml file data shouldn't be modified).
+7.To run the script in firefox, open testng.xml and set 'Browser' parameter value="firefox", for chrome value="chrome", for internet explorer value="ie".
 8.After it ran refresh the project and go to "ExtentReport" folder and open "redpanda.html" in the browser to see the test report.
 
 
