@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
     <classes>
       <class name="test_cases.ImdbDataBaseEntryTest">
         <methods>
@@ -11,6 +11,13 @@
           <include name="fetchFromImdbPage"/>
         </methods>
       </class> <!-- test_cases.ImdbDataBaseEntryTest -->
+      <class name="test_cases.ImdbExcelEntryTest">
+        <methods>
+          <include name="browserClose"/>
+          <include name="configBc"/>
+          <include name="Test1"/>
+        </methods>
+      </class> <!-- test_cases.ImdbExcelEntryTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

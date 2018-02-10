@@ -12,12 +12,11 @@ import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
 
 public class BaseClass 
 {
-
-	Exel ex=new Exel();
 	public static WebDriver driver;
 	
 	
@@ -25,12 +24,10 @@ public class BaseClass
 	@BeforeClass
 	
 	//putting @parameter anotation for cross browser testing
-	//@Parameters("Browser")
-	public void configBc() throws Throwable
+	@Parameters("Browser")
+	public void configBc(String browser) throws Throwable
 	{
-		//getting url from excel
-		String url= ex.getdata("commonData",0, 1);
-		String browser=ex.getdata("commonData", 3, 1);
+		String url= "http://www.imdb.com/chart/top";
 		
 		//configureing log4j with the baseClass
 		BasicConfigurator.configure();

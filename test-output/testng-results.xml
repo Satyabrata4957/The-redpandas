@@ -2,30 +2,37 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="95441" started-at="2018-02-08T19:25:01Z" finished-at="2018-02-08T19:26:36Z">
+  <suite name="Suite" duration-ms="121453" started-at="2018-02-10T08:05:00Z" finished-at="2018-02-10T08:07:02Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="95441" started-at="2018-02-08T19:25:01Z" finished-at="2018-02-08T19:26:36Z">
+    <test name="Test" duration-ms="121453" started-at="2018-02-10T08:05:00Z" finished-at="2018-02-10T08:07:02Z">
       <class name="test_cases.ImdbDataBaseEntryTest">
-        <test-method status="PASS" signature="configBc()[pri:0, instance:test_cases.ImdbDataBaseEntryTest@150c158]" name="configBc" is-config="true" duration-ms="52454" started-at="2018-02-09T01:25:01Z" finished-at="2018-02-09T01:25:53Z">
+        <test-method status="PASS" signature="configBc(java.lang.String)[pri:0, instance:test_cases.ImdbDataBaseEntryTest@4a87761d]" name="configBc" is-config="true" duration-ms="43720" started-at="2018-02-10T14:05:00Z" finished-at="2018-02-10T14:05:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method status="PASS" signature="fetchFromImdbPage()[pri:0, instance:test_cases.ImdbDataBaseEntryTest@150c158]" name="fetchFromImdbPage" duration-ms="39378" started-at="2018-02-09T01:25:53Z" finished-at="2018-02-09T01:26:33Z">
+        <test-method status="PASS" signature="fetchFromImdbPage()[pri:0, instance:test_cases.ImdbDataBaseEntryTest@4a87761d]" name="fetchFromImdbPage" duration-ms="29417" started-at="2018-02-10T14:05:44Z" finished-at="2018-02-10T14:06:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fetchFromImdbPage -->
-        <test-method status="PASS" signature="putDataToDataBase()[pri:0, instance:test_cases.ImdbDataBaseEntryTest@150c158]" name="putDataToDataBase" duration-ms="3211" started-at="2018-02-09T01:26:33Z" depends-on-methods="test_cases.ImdbDataBaseEntryTest.fetchFromImdbPage" finished-at="2018-02-09T01:26:36Z">
+        <test-method status="PASS" signature="putDataToDataBase()[pri:0, instance:test_cases.ImdbDataBaseEntryTest@4a87761d]" name="putDataToDataBase" duration-ms="48053" started-at="2018-02-10T14:06:13Z" depends-on-methods="test_cases.ImdbDataBaseEntryTest.fetchFromImdbPage" finished-at="2018-02-10T14:07:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- putDataToDataBase -->
-        <test-method status="PASS" signature="browserClose()[pri:0, instance:test_cases.ImdbDataBaseEntryTest@150c158]" name="browserClose" is-config="true" duration-ms="4139" started-at="2018-02-09T01:26:39Z" finished-at="2018-02-09T01:26:43Z">
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:test_cases.ImdbDataBaseEntryTest@4a87761d]" name="browserClose" is-config="true" duration-ms="5229" started-at="2018-02-10T14:07:03Z" finished-at="2018-02-10T14:07:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->
       </class> <!-- test_cases.ImdbDataBaseEntryTest -->
       <class name="test_cases.ImdbDataBaseViewTest">
-        <test-method status="PASS" signature="fetchFromImdbDataBase()[pri:0, instance:test_cases.ImdbDataBaseViewTest@10dba097]" name="fetchFromImdbDataBase" duration-ms="32" started-at="2018-02-09T01:26:36Z" finished-at="2018-02-09T01:26:36Z">
+        <test-method status="PASS" signature="fetchFromImdbDataBase()[pri:0, instance:test_cases.ImdbDataBaseViewTest@37374a5e]" name="fetchFromImdbDataBase" duration-ms="40" started-at="2018-02-10T14:07:01Z" finished-at="2018-02-10T14:07:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fetchFromImdbDataBase -->

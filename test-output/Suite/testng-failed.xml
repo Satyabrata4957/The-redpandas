@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="generic_lib.Listner"/>
-  </listeners>
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
-    <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="imdb_250.ImdbTop_250_Movies">
+      <class name="test_cases.ImdbDataBaseEntryTest">
         <methods>
-          <include name="Test1"/>
           <include name="browserClose"/>
           <include name="configBc"/>
+          <include name="putDataToDataBase"/>
+          <include name="fetchFromImdbPage"/>
         </methods>
-      </class> <!-- imdb_250.ImdbTop_250_Movies -->
+      </class> <!-- test_cases.ImdbDataBaseEntryTest -->
+      <class name="test_cases.ImdbExcelEntryTest">
+        <methods>
+          <include name="browserClose"/>
+          <include name="configBc"/>
+          <include name="Test1"/>
+        </methods>
+      </class> <!-- test_cases.ImdbExcelEntryTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

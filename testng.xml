@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-   <listeners> 
-     <listener class-name="generic_lib.Listner"/>
-</listeners>
-
-  <test name="Test">
+<parameter name="Browser" value="chrome"/>
+  <test thread-count="5" name="Test">
     <classes>
       <class name="test_cases.ImdbDataBaseEntryTest"/>
       <class name="test_cases.ImdbDataBaseViewTest"/>
